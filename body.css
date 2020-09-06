@@ -13,3 +13,9 @@ body {
     background-attachment: fixed;
 }
 
+.center img{
+    max-width: 100%;
+    text-align: center;
+}
+
+
