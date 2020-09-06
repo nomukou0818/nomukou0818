@@ -29,10 +29,3 @@ function clock() {
 // 上記のclock関数を1000ミリ秒ごと(毎秒)に実行
 setInterval(clock, 1000);
 
-$(function () {
-
-    // 一旦hide()で隠してフェードインさせる
-    $('.center').hide().fadeIn(3000);
-
-});
-
