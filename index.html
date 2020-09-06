@@ -3,9 +3,24 @@
 
 <head>
     <meta charset="utf-8">
-    <title>作成中？？・・・</title>
+    <title>作成中・・・</title>
     <link rel="stylesheet" href="body.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!--自動スクロール-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slider').hide().fadeIn(3000);   /*表示されるまでの時間*/
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 2000,        /*スクロール間隔*/
+            });
+        });
+    </script>
+    <!---->
 </head>
 
 <body>
@@ -31,10 +46,13 @@
         <option value=”dec”>12月</option>
     </select>
 
-<div class="center">
-  <img src="https://s15543.pcdn.co/wp-content/uploads/2017/12/augmented-reality-trends.jpg" alt="サンプル画像" />
-</div>
-    
+    <div class="slider">
+        <img src="https://s15543.pcdn.co/wp-content/uploads/2017/12/augmented-reality-trends.jpg" width="500" height="300" alt="">
+        <img src="https://s15543.pcdn.co/wp-content/uploads/2017/12/augmented-reality-trends.jpg" width="500" height="300" alt="">
+        <img src="https://s15543.pcdn.co/wp-content/uploads/2017/12/augmented-reality-trends.jpg" width="500" height="300" alt="">
+        <img src="https://s15543.pcdn.co/wp-content/uploads/2017/12/augmented-reality-trends.jpg" width="500" height="300" alt="">
+    </div>
+
 </body>
 
 </html>
